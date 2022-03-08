@@ -2,13 +2,7 @@
 
 // Connexion � la base de donn�es
 
-try{
-	$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-    $conn = new PDO('mysql:host=localhost;dbname=portfolio;charset=utf8', 'root', '', $pdo_options);
-}
-catch(Exception $e){
-    die('Erreur : '.$e->getMessage());
-}
+include('sql_connexion_bdd.php');
 
 
 

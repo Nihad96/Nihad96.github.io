@@ -10,6 +10,8 @@ echo'
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
     </head>
     <body>
         <navbar id="nav">
@@ -23,4 +25,3 @@ echo'
                 <p id="nav_text">'.$page.'</p>
             </div>
         </navbar>';
-?>
