@@ -2,7 +2,7 @@
 
 // Connexion � la base de donn�es
 
-include('sql_connexion_bdd.php');
+include('sql_connexion_bdd_local.php');
 
 $url = $_POST['creer_photo'];
 $message_erreur = '';

@@ -1,11 +1,13 @@
 <?php
+
+
 echo'
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <title>Portfolio</title>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="/portfolio/css/style.css" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
@@ -16,7 +18,7 @@ echo'
     <body>
         <navbar id="nav">
             <div id="profile">
-                <a id="accueil" href="index.php">↜ Accueil</a>
+                <a id="accueil" href="/portfolio/index.php">↜ Accueil</a>
             </div>
             <!--<img src="images/profile.jpg" alt="profile" id="profile">-->
             

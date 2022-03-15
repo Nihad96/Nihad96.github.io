@@ -19,11 +19,19 @@ include ('navbar.php');
         </div> 
         
 
-        <div class="card" onclick="location=\'destinations.php\'">
+        <div class="card" onclick="location=\'pages/destinations.php\'">
             <img src="images/travel.jpg" alt="card1" class="card_img">
             <div class="card_content">
-                <p class="card_title">E5</p>
+                <p class="card_title">E5 - Destinations</p>
                 <p class="card_text">Réalisation d\'un CRUD (create, read, update, delete) en AJAX, sur le thème des voyages</p>
+            </div>
+        </div>
+        
+        <div class="card" onclick="location=\'missions.php\'">
+            <img src="images/laptop.jpg" alt="card1" class="card_img">
+            <div class="card_content">
+                <p class="card_title">E4 - Missions</p>
+                <p class="card_text">Liste des missions E4 réalisées au cours de ma formation.</p>
             </div>
         </div>
         

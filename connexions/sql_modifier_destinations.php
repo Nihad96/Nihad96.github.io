@@ -2,7 +2,7 @@
 
 // Connexion � la base de donn�es
 
-include('sql_connexion_bdd.php');
+include('sql_connexion_bdd_local.php');
 
 
 /* $get_info = "SELECT * FROM destinations WHERE id = :modifier_id"; */

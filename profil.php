@@ -59,10 +59,10 @@ include ('navbar.php');
     <div class="bloc_profil">
         <div class="contenu_profil">
             <p class="titre"><u>Centres d'intérêt</u></p>
-            <p><strong>Football</strong> en club, depuis mes 6 ans.</p>
+            <p><strong>Football</strong> en club, depuis mes 6 ans</p>
             <p><strong>Sorties </strong>entre amis</p>
             <p><strong>Voyages </strong>aux quatres coins du monde</p>
-            <p><strong>Découverte </strong>du monde qui m'entoure</p>
+            <p><strong>Randonnée </strong> et sports en plein air</p>
         </div>
         <img class="img_profil" src="images/profil/foot.jpg">
     </div>

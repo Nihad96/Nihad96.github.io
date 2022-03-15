@@ -23,7 +23,7 @@ echo
                 <button id="bouton_creer_destination" class="bouton" type="button" onclick="afficher_creer_destination()">Ajouter une destination</button>
                 </div>
         </div>';
-    /* include ('connexions/read_destinations.php'); */
+    
 
     echo'<form class="form" id="form_creer_destination" onsubmit="return fonction_creer_destination();">
             <div class="form_content">

@@ -496,6 +496,13 @@ b {
     height: calc(100% - 36px);
 }
 
+.liste_e4 {
+    flex-wrap: wrap;
+}
+
+.liste_e4 a {
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 960px) {
     #profile {
@@ -525,7 +532,7 @@ b {
     }
 
     .card {
-        width:calc(100% - 30px);
+        width:100%
     }
 
 
