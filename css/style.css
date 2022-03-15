@@ -6,7 +6,7 @@ body {
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Arial;
+    font-family: 'Overpass', sans-serif;
 }
 
 font {
@@ -98,9 +98,10 @@ font {
     margin: 15px auto;
 }
 
-.card_title, #nav_text, .titre, .form h3{
+.card_title, #nav_text, .form h3{
     font-family: 'Dancing Script', cursive;
     color: #ffad3f;
+    font-weight: 100;
 }
 
 .card_title {
@@ -259,8 +260,9 @@ font {
 }
 
 .titre {
-    font-size:28px;
+    font-size:26px;
     height:auto;
+    color:#ffad3f;
 }
 
 .date_destination {
@@ -287,10 +289,10 @@ font {
     background: rgb(15 8 8 / 60%);
     border: none;
     color: white;
-    font-family: 'Dancing Script', cursive;
     font-size: 28px;
     padding: 20px;
     cursor: pointer;
+    font-family:'Overpass', sans-serif ;
 }
 
 .bouton:hover {
@@ -517,6 +519,24 @@ b {
     margin: auto
 }
 
+#div_photo_plein_ecran {
+    background-color: rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#img_photo_plein_ecran {
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+}
+
 @media screen and (max-width: 960px) {
     #profile {
         width:100px;
@@ -571,7 +591,8 @@ b {
 
     #nav_container {
         text-align:center;
-        margin:10px;
+        margin:auto;
+        margin-bottom: 20px;
         width: 100%;
     }
 
@@ -586,6 +607,7 @@ b {
     #bouton_creer_destination {
         margin: auto;
         width: 100%;
+        font-size: 26px;
     }
 
     #div_creer_destination {
@@ -609,7 +631,7 @@ b {
         display: none;
     }
 
-    #content {
+    #content, #img_photo_plein_ecran {
         width: 90%;
     }
 

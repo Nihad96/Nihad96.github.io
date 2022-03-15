@@ -17,15 +17,14 @@ echo
     include ('navbar.php');
 
     
-
-    echo'<div id="content">
+?>
+    <div id="content">
             <div id="div_creer_destination">
                 <button id="bouton_creer_destination" class="bouton" type="button" onclick="afficher_creer_destination()">Ajouter une destination</button>
                 </div>
-        </div>';
+        </div>
     
-
-    echo'<form class="form" id="form_creer_destination" onsubmit="return fonction_creer_destination();">
+        <form class="form" id="form_creer_destination" onsubmit="return fonction_creer_destination();">
             <div class="form_content">
                 <img src="icons/fermer.png" id="fermer_creer_destination" alt="fermer" onclick="cacher_creer_destination()">
                 <h3>Créer une nouvelle destination</h3>
@@ -49,12 +48,19 @@ echo
                 <input type="submit" id="modifier_valider" class="form_lign form_valider">
             </div>
         </form>
-    
-    ';
 
-    include ('footer.php');
-        
+
+    <?php
+
+    include ('footer.php'); ?>
+
+    <div id="div_photo_plein_ecran">
+        <img src="" alt="photo_plein_ecran" id="img_photo_plein_ecran">
+    </div>
+
+    <?php
     include ('js/js_destinations.php');
+    include ('js/script_photo_plein_ecran.php');
     include ('js/clic_sur_fenetre.php');
     
     echo'</body>

@@ -62,7 +62,7 @@ function afficher_elements(cass) {
                             html += '</div>';
                         html += '</div>';
                     html += '</div>';
-                    html += '<img src="'+window.data[a].photo+'" class="photo_destination" id="photo_destination_' + window.data[a].id + '"></img>';
+                    html += '<img src="'+window.data[a].photo+'" class="photo_destination" id="photo_destination_' + window.data[a].id + '" onclick="fonction_afficher_image_plein_ecran(' + window.data[a].id + ')"></img>';
                     html += '<p class="description_destination" id="description_destination_' + window.data[a].id + '">' + window.data[a].commentaire.charAt(0).toUpperCase() + window.data[a].commentaire.slice(1)  + '</p>';
                 html += "</div>";
             }

@@ -14,7 +14,7 @@ include ('navbar.php');
             <img src="images/cedam.jpg" alt="card1" class="card_img">
             <div class="card_content">
                 <p class="card_title">Cedam</p>
-                <p class="card_text">Présentation de l\'entreprise dans laquelle je suis en alternance, Cedam</p>
+                <p class="card_text">Présentation de Cedam, l\'entreprise dans laquelle je suis alternant</p>
             </div>
         </div> 
         
