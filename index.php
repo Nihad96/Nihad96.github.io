@@ -7,19 +7,19 @@ include ('navbar.php');
             <img src="images/profil.jpg" alt="card1" class="card_img">
             <div class="card_content">
                 <p class="card_title">Qui suis-je ?</p>
-                <p class="card_text">Présentation de mon profil et des projets que j\'ai eu la chance de réaliser</p>
+                <p class="card_text">Présentation de mon profil et des projets que j\'ai réalisé</p>
             </div>
         </div> 
         <div class="card" onclick="location=\'cedam.php\'">
             <img src="images/cedam.jpg" alt="card1" class="card_img">
             <div class="card_content">
                 <p class="card_title">Cedam</p>
-                <p class="card_text">Présentation de l\'entreprise dans laquelle je suis en alternance : Cedam</p>
+                <p class="card_text">Présentation de l\'entreprise dans laquelle je suis en alternance, Cedam</p>
             </div>
         </div> 
         
 
-        <div class="card" onclick="location=\'pages/destinations.php\'">
+        <div class="card" onclick="location=\'destinations.php\'">
             <img src="images/travel.jpg" alt="card1" class="card_img">
             <div class="card_content">
                 <p class="card_title">E5 - Destinations</p>

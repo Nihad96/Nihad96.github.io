@@ -498,10 +498,23 @@ b {
 
 .liste_e4 {
     flex-wrap: wrap;
+    cursor:pointer;
 }
 
-.liste_e4 a {
+.liste_e4:hover {
+    background:rgb(15 8 8 / 80%);
+}
+
+.liste_e4 p {
     margin-bottom: 20px;
+}
+
+#div_creer_destination {
+    width:calc(100% - 30px);
+    display:flex;
+    justify-content:space-around;
+    color:black;
+    margin: auto
 }
 
 @media screen and (max-width: 960px) {
@@ -572,6 +585,11 @@ b {
 
     #bouton_creer_destination {
         margin: auto;
+        width: 100%;
+    }
+
+    #div_creer_destination {
+
     }
 
     .bloc_profil {
@@ -581,4 +599,18 @@ b {
     .bloc_profil img {
         margin: auto;
     }
+
+    .liste_e4 p {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .liste_e4 img {
+        display: none;
+    }
+
+    #content {
+        width: 90%;
+    }
+
 }

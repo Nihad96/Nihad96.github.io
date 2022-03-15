@@ -1,7 +1,7 @@
 <?php
 
 
-$page = 'Connexion au programme de SAV';
+$page = 'Connexion utilisateur';
 
 include('navbar.php');
 ?>

@@ -19,7 +19,7 @@ echo
     
 
     echo'<div id="content">
-            <div style="width:calc(100% - 30px); display:flex; justify-content:space-around; color:black; margin: auto">
+            <div id="div_creer_destination">
                 <button id="bouton_creer_destination" class="bouton" type="button" onclick="afficher_creer_destination()">Ajouter une destination</button>
                 </div>
         </div>';
