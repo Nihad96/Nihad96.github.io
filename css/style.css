@@ -7,7 +7,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Overpass', sans-serif;
-    background: yellow;
 }
 
 font {
@@ -536,6 +535,19 @@ b {
     width: 70%;
     height: fit-content;
     margin: auto;
+}
+
+#nav_connect {
+    margin: 0;
+    margin-left: auto;
+    padding-top:15px;
+    padding-bottom: 15px;
+    cursor:pointer;
+    font-size:22px;
+}
+
+#nav_connect:hover {
+    color: #08e208;
 }
 
 @media screen and (max-width: 960px) {

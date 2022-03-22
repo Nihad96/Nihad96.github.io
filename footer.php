@@ -1,6 +1,6 @@
-<?php
 
-echo'<div id="footer"> 
+
+<div id="footer">
 <div id="footer_text">
     <div class="social" onclick="window.open(\'mailto:zatricnihad@gmail.com\');">
         <img src="icons/gmail.png" alt="gmail" class="social_img">
@@ -31,12 +31,26 @@ echo'<div id="footer">
         <p>@Nihad96</p>
     </div>
 </div>
-</div>';
+</div>
 
 
-echo'</body>
+</body>
 </html>
 
-';
+<?php
 
-?>
+if(!isset($_SESSION['nom'])) {
+    ?>
+    <form class="form" id="form_authentification" onsubmit="return fonction_authentification();">
+        <div class="form_content">
+            <img src="icons/fermer.png" id="fermer_modifier_authentification" alt="fermer" onclick="cacher_authentification()">
+            <h3>Connectez vous</h3>
+            <input type="text" id="pseudo" name="pseudo" maxlength="255" class="form_lign">
+            <input type="password" id="mot_de_passe" name="mot_de_passe" class="form_lign">
+            <input type="submit" id="modifier_valider" class="form_lign form_valider">
+        </div>
+    </form>
+
+<?php
+include('js/authentification.php');
+}

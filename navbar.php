@@ -1,7 +1,14 @@
 <?php
 
+session_start();
+if(isset($_POST['username']) && isset($_POST['password'])) {
+    include('connexion/sql_authentification.php');
+};
 
-echo'
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -24,7 +31,11 @@ echo'
             <!--<img src="images/profile.jpg" alt="profile" id="profile">-->
             
             <div id="nav_container">
-                <p id="nav_name">Nihad Zatric</p>
-                <p id="nav_text">'.$page.'</p>
+                <?php if(isset($_SESSION['nom'])) { ?>
+                    <p id="nav_name"><?php echo $_SESSION['nom']; $_SESSION['prenom'];?></p><?php }
+                else {
+                    ?><p id="nav_connect" onclick="afficher_authentification()">Connectez vous</p>
+                <?php } ?>
+                <p id="nav_text"><?php echo $page ?></p>
             </div>
-        </navbar>';
+        </navbar>
