@@ -1,7 +1,6 @@
 <?php
 $page = 'Destinations';
-echo
-'<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
@@ -12,8 +11,8 @@ echo
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     </head>
-    <body>';
-
+    <body>
+    <?php
     include ('navbar.php');
 
     
