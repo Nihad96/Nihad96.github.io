@@ -551,6 +551,11 @@ b {
 }
 
 @media screen and (max-width: 960px) {
+
+    #nav_connect {
+        margin-right: 10px;
+    }
+
     #profile {
         width:100px;
         height:100px;
