@@ -9,7 +9,7 @@
 
 
     function afficher_authentification() {
-        form_authentification.style.display = "block";
+        form_authentification.style.display = "flex";
     }
 
     function cacher_authentification() {
@@ -26,6 +26,10 @@
         else {
             alert('Un des champs est vide');
         }
+    }
+
+    function deconnexion() {
+        document.getElementById('form_deconnexion').submit();
     }
 
 </script>

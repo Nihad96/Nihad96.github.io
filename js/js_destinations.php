@@ -24,7 +24,7 @@ function cacher_creer_destination() {
 
 function afficher_elements(cass) {
     var ajax = new XMLHttpRequest();
-    if(cass == "all") {
+    if(cass == "user" || cass == "admin") {
         ajax.open("GET", "connexions/sql_lire_destinations.php", true);
         ajax.send();
     }
@@ -56,10 +56,12 @@ function afficher_elements(cass) {
                         html += '<p class="titre" id="titre_destination_' + window.data[a].id + '">' + window.data[a].destination.charAt(0).toUpperCase() + window.data[a].destination.slice(1) + '</p>';
                         html += '<div class="date_boutons">';
                             html += '<p class="date_destination" id="date_destination_' + window.data[a].id + '">' + window.data[a].date + '</p>';
-                            html += '<div class="boutons_destination">';
-                                html += '<img class="bouton_modifier" src="icons/modifier.png" onclick="afficher_modifier_destination('+window.data[a].id+')">';
-                                html += '<img class="bouton_supprimer" src="icons/supprimer.png" onclick="fonction_supprimer_destination('+window.data[a].id+')">';
-                            html += '</div>';
+                            if(cass == 'admin') {
+                                html += '<div class="boutons_destination">';
+                                    html += '<img class="bouton_modifier" src="icons/modifier.png" onclick="afficher_modifier_destination('+window.data[a].id+')">';
+                                    html += '<img class="bouton_supprimer" src="icons/supprimer.png" onclick="fonction_supprimer_destination('+window.data[a].id+')">';
+                                html += '</div>';
+                            }
                         html += '</div>';
                     html += '</div>';
                     html += '<img src="'+window.data[a].photo+'" class="photo_destination" id="photo_destination_' + window.data[a].id + '" onclick="fonction_afficher_image_plein_ecran(' + window.data[a].id + ')"></img>';
@@ -72,8 +74,6 @@ function afficher_elements(cass) {
     }
 }
 
-// génère l'affichage des éléments via la requête Mysql
-afficher_elements("all");
 
 
 function fonction_creer_destination() {

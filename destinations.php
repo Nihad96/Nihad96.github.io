@@ -19,14 +19,17 @@ echo
     
 ?>
     <div id="content">
+        <?php if(isset($_SESSION['name'])) { ?>
             <div id="div_creer_destination">
                 <button id="bouton_creer_destination" class="bouton" type="button" onclick="afficher_creer_destination()">Ajouter une destination</button>
-                </div>
+            </div>
+        <?php } ?>
+
         </div>
     
         <form class="form" id="form_creer_destination" onsubmit="return fonction_creer_destination();">
             <div class="form_content">
-                <img src="icons/fermer.png" id="fermer_creer_destination" alt="fermer" onclick="cacher_creer_destination()">
+                <img src="icons/fermer.png" class="bouton_fermeture" id="fermer_creer_destination" alt="fermer" onclick="cacher_creer_destination()">
                 <h3>Créer une nouvelle destination</h3>
                 <input type="text" id="creer_destination" name="creer_destination" maxlength="30" class="form_lign" placeholder="Destination">
                 <input type="date" id="creer_date" name="creer_date" class="form_lign">
@@ -38,7 +41,7 @@ echo
 
         <form class="form" id="form_modifier_destination" onsubmit="return fonction_modifier_destination();">
             <div class="form_content">
-                <img src="icons/fermer.png" id="fermer_modifier_destination" alt="fermer" onclick="cacher_modifier_destination()">
+                <img src="icons/fermer.png" class="bouton_fermeture" id="fermer_modifier_destination" alt="fermer" onclick="cacher_modifier_destination()">
                 <input type="text" id="modifier_id" name="modifier_id" style="display:none">
                 <h3>Modifier une destination</h3>
                 <input type="text" id="modifier_destination" name="modifier_destination" maxlength="30" class="form_lign">
@@ -60,6 +63,15 @@ echo
 
     <?php
     include ('js/js_destinations.php');
+
+    if(isset($_SESSION['name'])) {
+        // génère l'affichage des éléments via la requête Mysql
+        ?><script>window.onload = afficher_elements("admin");</script><?php
+    }
+    else {
+        ?><script>window.onload = afficher_elements("user");</script><?php
+    }
+
     include ('js/script_photo_plein_ecran.php');
     include ('js/clic_sur_fenetre.php');
     

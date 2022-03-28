@@ -1,5 +1,10 @@
 <?php
 
+
+if(isset($_POST['input_deconnexion'])) {
+    session_destroy();
+}
+
 session_start();
 if(isset($_POST['username']) && isset($_POST['password'])) {
     include('connexion/sql_authentification.php');
@@ -32,7 +37,12 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
             
             <div id="nav_container">
                 <?php if(isset($_SESSION['nom'])) { ?>
-                    <p id="nav_name"><?php echo $_SESSION['nom']; $_SESSION['prenom'];?></p><?php }
+                    <p id="nav_name" onclick="deconnexion()"><?php echo $_SESSION['nom']; $_SESSION['prenom'];?></p>
+
+                    <form id="form_deconnection" method="POST">
+                        <input type="hidden" name="input_deconnexion">
+                    </form><?php
+                }
                 else {
                     ?><p id="nav_connect" onclick="afficher_authentification()">Connectez vous</p>
                 <?php } ?>
