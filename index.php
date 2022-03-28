@@ -3,8 +3,6 @@
 
 $page = 'Accueil';
 
-echo'ouiii';
-
 
 include ('navbar.php');
 
