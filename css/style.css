@@ -550,6 +550,14 @@ b {
     color: #08e208;
 }
 
+.bloc_e4 {
+    flex-wrap: wrap;
+}
+
+.bloc_e4 p {
+    width: 100%;
+}
+
 @media screen and (max-width: 960px) {
 
     #nav_connect {

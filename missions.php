@@ -27,6 +27,11 @@ include('navbar.php'); ?>
             <img class="img_programmes" src="images/e4/e4_4/offre_1.PNG">
         </div>
 
+        <div class="bloc_profil liste_e4" onclick="window.location = 'e4_5.php'">
+            <p class="card_title">E4 5 : Icone dynamique de panier</p>
+            <img class="img_programmes" src="images/e4/e4_5/panier_2.PNG">
+        </div>
+
     </div>
 
 <?php

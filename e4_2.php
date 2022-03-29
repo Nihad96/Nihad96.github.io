@@ -15,14 +15,18 @@ include('navbar.php');
         <div class="bloc_profil">
             <img class="img_programmes" src="images/e4/e4_2/echange_1.PNG">
         </div>
-        <div class="bloc_profil">
+        <div class="bloc_profil bloc_e4">
+            <p>Formulaire en HTML : </p>
+            <img class="img_programmes" src="images/e4/e4_2/echange_4.PNG">
+        </div>
+        <div class="bloc_profil bloc_e4">
+            <p>Formualire côté client :</p>
             <img class="img_programmes" src="images/e4/e4_2/echange_2.PNG">
         </div>
 
-        <div class="bloc_profil">
-            <p>Le fonctionnement du script est simple : on récupère les informations saisies dans les champs par l'utilisateur grâce à la méthode POST et on les insère dans la base de données MySQL.</p>
-        </div>
-        <div class="bloc_profil">
+        <div class="bloc_profil bloc_e4">
+            <p>Fichier d'insertion à la base de données :<br><br>Le fonctionnement du script est simple : on récupère les informations saisies dans les champs par l'utilisateur grâce à la méthode POST et on les insère dans la base de données MySQL.
+            </p>
             <img class="img_programmes" src="images/e4/e4_2/echange_3.PNG">
         </div>
 
