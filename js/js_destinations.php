@@ -55,7 +55,7 @@ function afficher_elements(cass) {
                     html += '<div class="legende_destination">';
                         html += '<p class="titre" id="titre_destination_' + window.data[a].id + '">' + window.data[a].destination.charAt(0).toUpperCase() + window.data[a].destination.slice(1) + '</p>';
                         html += '<div class="date_boutons">';
-                            html += '<p class="date_destination" id="date_destination_' + window.data[a].id + '">' + window.data[a].date + '</p>';
+                            html += '<p class="date_destination" id="date_destination_' + window.data[a].id + '">' + window.data[a].date.split("-").reverse().join("/") + '</p>';
                             if(cass == 'admin') {
                                 html += '<div class="boutons_destination">';
                                     html += '<img class="bouton_modifier" src="icons/modifier.png" onclick="afficher_modifier_destination('+window.data[a].id+')">';
@@ -82,51 +82,58 @@ function fonction_creer_destination() {
     var creer_commentaire = document.getElementById("creer_commentaire").value;
     var creer_photo = document.getElementById("creer_photo").value;
 
-    var ajax = new XMLHttpRequest();
-    ajax.open("POST", "connexions/sql_creer_destinations.php", true);
-    ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    ajax.send("creer_destination=" + creer_destination + "&creer_date=" + creer_date + "&creer_commentaire=" + creer_commentaire + "&creer_photo=" + creer_photo);
+    if(creer_destination != '' && creer_date != '' && creer_commentaire != '' && creer_photo != '') {
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST", "connexions/sql_creer_destinations.php", true);
+        ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        ajax.send("creer_destination=" + creer_destination + "&creer_date=" + creer_date + "&creer_commentaire=" + creer_commentaire + "&creer_photo=" + creer_photo);
 
-    ajax.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            /* console.log(this.responseText); */
-            /* var data = JSON.parse(this.responseText); */
+        ajax.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                /* console.log(this.responseText); */
+                /* var data = JSON.parse(this.responseText); */
 
-            if(isNaN(this.responseText)) {
-                console.log(this.responseText);
-            }
-            else {
+                if(isNaN(this.responseText)) {
+                    console.log(this.responseText);
+                }
+                else {
 
-                var html = '<div class="une_destination" id="destination_' + this.responseText + '">';
+                    var html = '<div class="une_destination" id="destination_' + this.responseText + '">';
                     html += '<div class="legende_destination">';
-                        html += '<p class="titre" id="titre_destination_' + this.responseText + '">' + creer_destination + '</p>';
-                        html += '<div class="date_boutons">';
-                            html += '<p class="date_destination" id="date_destination_' + this.responseText + '">' + creer_date + '</p>';
-                            html += '<div class="boutons_destination">';
-                                html += '<img class="bouton_modifier" src="icons/modifier.png" onclick="afficher_modifier_destination('+this.responseText+')">';
-                                html += '<img class="bouton_supprimer" src="icons/supprimer.png" onclick="fonction_supprimer_destination('+this.responseText+')">';
-                            html += '</div>';
-                        html += '</div>';
+                    html += '<p class="titre" id="titre_destination_' + this.responseText + '">' + creer_destination + '</p>';
+                    html += '<div class="date_boutons">';
+                    html += '<p class="date_destination" id="date_destination_' + this.responseText + '">' + creer_date + '</p>';
+                    html += '<div class="boutons_destination">';
+                    html += '<img class="bouton_modifier" src="icons/modifier.png" onclick="afficher_modifier_destination('+this.responseText+')">';
+                    html += '<img class="bouton_supprimer" src="icons/supprimer.png" onclick="fonction_supprimer_destination('+this.responseText+')">';
+                    html += '</div>';
+                    html += '</div>';
                     html += '</div>';
                     html += '<img src="' + creer_photo + '" class="photo_destination" id="photo_destination_' + this.responseText + '"></img>';
                     html += '<p class="description_destination" id="description_destination_' + this.responseText + '">' + creer_commentaire + '</p>';
-                html += "</div>";
-                document.getElementById("content").innerHTML += html;
+                    html += "</div>";
+                    document.getElementById("content").innerHTML += html;
 
 
-                // puis recréer le DOM à partir de mysql
-                form_creer_destination.style.display = "none";
+                    // puis recréer le DOM à partir de mysql
+                    form_creer_destination.style.display = "none";
 
-                // on va créer une nouvelle ligne
-                row = window.data.length;
-                // on crée un objet json avec les infos à rentrer dans la nouvelle ligne du tableau
-                json = '{"id":' + this.responseText + ', "destination":"' + creer_destination + '", "date":"' + creer_date + '", "commentaire":"' + creer_commentaire + '", "photo":"' + creer_photo + '"}';
+                    // on va créer une nouvelle ligne
+                    row = window.data.length;
+                    // on crée un objet json avec les infos à rentrer dans la nouvelle ligne du tableau
+                    json = '{"id":' + this.responseText + ', "destination":"' + creer_destination + '", "date":"' + creer_date + '", "commentaire":"' + creer_commentaire + '", "photo":"' + creer_photo + '"}';
 
-                // on dit que la nouvelle ligne du tableau prend en valeurs l'objet JSON
-                window.data[row] = JSON.parse(json);
+                    // on dit que la nouvelle ligne du tableau prend en valeurs l'objet JSON
+                    window.data[row] = JSON.parse(json);
+                }
             }
-        }
-    };
+        };
+
+    }
+    else {
+        alert('Tous les champs doivent être renseignés.');
+    }
+
 
     return false;
 }
@@ -192,7 +199,7 @@ function fonction_modifier_destination() {
 
             document.getElementById("titre_destination_"+modifier_id).innerHTML = modifier_destination;
             document.getElementById("date_destination_"+modifier_id).innerHTML = modifier_date;
-            document.getElementById("photo_destination_"+modifier_id).innerHTML = modifier_photo;
+            document.getElementById("photo_destination_"+modifier_id).src = modifier_photo;
             document.getElementById("description_destination_"+modifier_id).innerHTML = modifier_commentaire;
             form_modifier_destination.style.display = "none";
             for (var a = 0; a < window.data.length; a++) {

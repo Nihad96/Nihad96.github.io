@@ -2,9 +2,9 @@
 
 <div id="footer">
 <div id="footer_text">
-    <div class="social" onclick="window.open('mailto:zatricnihad@gmail.com');">
+    <div class="social not_pointer">
         <img src="icons/gmail.png" alt="gmail" class="social_img">
-        <p>Email</p>
+        <p>test@gmail.com</p>
     </div> 
     <div class="social not_pointer">
         <img src="icons/telephone.png" alt="telephone" class="social_img">
@@ -18,9 +18,9 @@
         <img src="icons/city.png" alt="city" class="social_img">
         <p>Strasbourg</p>
     </div>
-    <div class="social" onclick="window.open('https://www.linkedin.com/in/nihadzatric/');">
+    <div class="social not_pointer">
         <img src="icons/linkedin.png" alt="linkedin" class="social_img">
-        <p>@Nihad96</p>
+        <p>@Exemple</p>
     </div>
 </div>
 </div>
