@@ -3,7 +3,7 @@
 
     window.onclick = function(event) {
         if (event.target == form_authentification) {
-            form_authentification.style.display = "none";
+            cacher_authentification();
         }
     }
 
@@ -14,6 +14,7 @@
 
     function cacher_authentification() {
         form_authentification.style.display = "none";
+        document.getElementById('text_erreur_connexion').classList.add('d-none');
     }
 
     function fonction_authentification() {
@@ -28,8 +29,5 @@
         }
     }
 
-    function deconnexion() {
-        document.getElementById('form_deconnexion').submit();
-    }
 
 </script>

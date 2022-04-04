@@ -18,7 +18,7 @@ $page = 'Destinations';
     
 ?>
     <div id="content">
-        <?php if(isset($_SESSION['name'])) { ?>
+        <?php if(isset($_SESSION['nom'])) { ?>
             <div id="div_creer_destination">
                 <button id="bouton_creer_destination" class="bouton" type="button" onclick="afficher_creer_destination()">Ajouter une destination</button>
             </div>
@@ -63,7 +63,7 @@ $page = 'Destinations';
     <?php
     include ('js/js_destinations.php');
 
-    if(isset($_SESSION['name'])) {
+    if(isset($_SESSION['nom'])) {
         // génère l'affichage des éléments via la requête Mysql
         ?><script>window.onload = afficher_elements("admin");</script><?php
     }

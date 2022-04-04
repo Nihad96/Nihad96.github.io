@@ -9,6 +9,10 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
+.d-none {
+    display: none;
+}
+
 font {
     color:white;
 }
@@ -62,10 +66,7 @@ font {
     min-width: 150px;
 }
 
-#nav_name {
-    font-size:22px;
-    font-family: 'Baloo Tammudu 2', cursive;
-}
+
 
 #nav_text {
     font-size:50px;
@@ -537,7 +538,7 @@ b {
     margin: auto;
 }
 
-#nav_connect {
+#nav_connect, #nav_name {
     margin: 0;
     margin-left: auto;
     padding-top:15px;
@@ -546,7 +547,7 @@ b {
     font-size:22px;
 }
 
-#nav_connect:hover {
+#nav_connect:hover, #nav_name:hover {
     color: #08e208;
 }
 
@@ -558,9 +559,13 @@ b {
     width: 100%;
 }
 
+#text_erreur_connexion {
+    text-align: center;
+}
+
 @media screen and (max-width: 960px) {
 
-    #nav_connect {
+    #nav_connect, #nav_name {
         margin-right: 10px;
     }
 
@@ -572,7 +577,6 @@ b {
     #accueil_container {
         width: 30%;
     }
-
 
     .une_destination {
         width:calc(100% - 30px);

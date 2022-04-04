@@ -6,7 +6,7 @@ include ('navbar.php');
 ?>
 
 <div id="content">
-    <a class="bouton" href="cv_nihad.pdf" download="cv_nihad_zatric">Télcharger mon CV</a>
+    <a class="bouton" href="fichiers/cv_nihad.pdf" download="cv_nihad_zatric">Télcharger mon CV</a>
 
     <div class="bloc_profil">
         <div class="contenu_profil">

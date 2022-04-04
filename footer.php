@@ -33,10 +33,12 @@
 
 if(!isset($_SESSION['nom'])) {
     ?>
-    <form class="form" id="form_authentification" onsubmit="return fonction_authentification();">
+    <form class="form" method="POST" id="form_authentification" onsubmit="return fonction_authentification();">
         <div class="form_content">
             <img src="icons/fermer.png" class="bouton_fermeture" id="fermer_modifier_authentification" alt="fermer" onclick="cacher_authentification()">
             <h3>Connectez vous</h3>
+            <p class="d-none" id="text_erreur_connexion">Le nom de compte et/ou le mot de passe ne sont pas reconnus.</p>
+
             <input type="text" id="pseudo" name="pseudo" maxlength="255" class="form_lign" placeholder="Nom de compte">
             <input type="password" id="mot_de_passe" name="mot_de_passe" class="form_lign" placeholder="Mot de passe">
             <input type="submit" class="form_lign form_valider">

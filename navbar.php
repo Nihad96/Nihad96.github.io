@@ -1,13 +1,14 @@
 <?php
 
+session_start();
 
 if(isset($_POST['input_deconnexion'])) {
     session_destroy();
+    header('Location: '.$_SERVER['PHP_SELF']);
 }
 
-session_start();
-if(isset($_POST['username']) && isset($_POST['password'])) {
-    include('connexion/sql_authentification.php');
+if(isset($_POST['pseudo']) && isset($_POST['mot_de_passe'])) {
+    include('connexions/sql_authentification.php');
 };
 
 ?>
@@ -37,9 +38,9 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
             
             <div id="nav_container">
                 <?php if(isset($_SESSION['nom'])) { ?>
-                    <p id="nav_name" onclick="deconnexion()"><?php echo $_SESSION['nom']; $_SESSION['prenom'];?></p>
+                    <p id="nav_name" onclick="document.getElementById('form_deconnexion').submit();"><?php echo ucfirst($_SESSION['nom']) .' '. ucfirst($_SESSION['prenom']);?></p>
 
-                    <form id="form_deconnection" method="POST">
+                    <form id="form_deconnexion" method="POST">
                         <input type="hidden" name="input_deconnexion">
                     </form><?php
                 }
