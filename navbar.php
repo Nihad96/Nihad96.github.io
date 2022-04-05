@@ -4,12 +4,15 @@ session_start();
 
 if(isset($_POST['input_deconnexion'])) {
     session_destroy();
-    header('Location: '.$_SERVER['PHP_SELF']);
+    unset($_SESSION);
+    // header('Location: '.$_SERVER['PHP_SELF']);
+    $acces = false;
 }
 
 if(isset($_POST['pseudo']) && isset($_POST['mot_de_passe'])) {
     include('connexions/sql_authentification.php');
-};
+    // header('Location: '.$_SERVER['PHP_SELF']);
+}
 
 ?>
 

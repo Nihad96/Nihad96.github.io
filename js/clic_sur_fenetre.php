@@ -10,6 +10,9 @@ window.onclick = function(event) {
     if (event.target == div_photo_plein_ecran) {
         div_photo_plein_ecran.style.display = "none";
     }
+    if (event.target == form_authentification) {
+        cacher_authentification();
+    }
 }
 
 </script>

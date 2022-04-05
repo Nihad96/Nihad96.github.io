@@ -76,5 +76,10 @@ $page = 'Destinations';
     
     echo'</body>
 </html>';
+if(isset($_POST['pseudo'])) {
+    if($acces == false) {
+        include('js/echec_authentification.php');
+    }
+}
 
 ?>

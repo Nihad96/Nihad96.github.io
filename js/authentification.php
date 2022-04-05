@@ -1,11 +1,6 @@
 <script>
     let form_authentification = document.getElementById('form_authentification');
 
-    window.onclick = function(event) {
-        if (event.target == form_authentification) {
-            cacher_authentification();
-        }
-    }
 
 
     function afficher_authentification() {
