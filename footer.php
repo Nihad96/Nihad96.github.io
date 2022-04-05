@@ -18,9 +18,9 @@
         <img src="icons/city.png" alt="city" class="social_img">
         <p>Strasbourg</p>
     </div>
-    <div class="social not_pointer">
+    <div class="social" onclick="window.open('https://www.linkedin.com/in/nihadzatric/')">
         <img src="icons/linkedin.png" alt="linkedin" class="social_img">
-        <p>@Exemple</p>
+        <p>@Nihad96</p>
     </div>
 </div>
 </div>

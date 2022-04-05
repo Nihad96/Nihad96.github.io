@@ -10,6 +10,8 @@ include('navbar.php'); ?>
         <div class="bloc_profil liste_e4" onclick="window.location = 'e4_1.php'">
             <p class="card_title">E4 1 : Système de pagination</p>
             <img class="img_programmes" src="images/e4/e4_1/selecteur_semaine.PNG">
+            <p>Répondre aux incidents et aux demandes d’assistance et d’évolution</p><br>
+            <p>Travailler en mode projet</p>
         </div>
 
         <div class="bloc_profil liste_e4" onclick="window.location = 'e4_2.php'">
