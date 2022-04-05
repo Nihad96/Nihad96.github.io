@@ -6,9 +6,15 @@ $page = 'Connexion utilisateur';
 include('navbar.php');
 ?>
     <div id="content" class="content_e4">
+        <div id="div_creer_destination">
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e4/NZ_E4_3_connexion_utilisateur.docx'">Fichier Word</button>
+        </div>
         <div class="bloc_profil">
             <p>Dans le cadre de la création d'un programme de gestion de demandes de SAV, j'ai mis un place un système de connexion utilisateur.</p>
 
+        </div>
+        <div class="bloc_profil">
+            <img class="img_programmes" src="images/e4/e4_3/sav_5.PNG">
         </div>
         <div class="bloc_profil">
             <img class="img_programmes" src="images/e4/e4_3/sav_1.PNG">
