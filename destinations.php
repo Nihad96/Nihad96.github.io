@@ -22,8 +22,8 @@ $page = 'Destinations';
         <?php if(isset($_SESSION['nom'])) { ?>
                 <button id="bouton_creer_destination" class="bouton" type="button" onclick="afficher_creer_destination()">Ajouter une destination</button>
         <?php } ?>
-            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e5/NZ_E5_1_destinations.docx'">Fiche Authentification</button>
-            <button id="bouton_e5_dest" class="bouton" type="button" onclick="window.location.href='fichiers/e5/NZ_E5_1_destinations.docx'">Fiche Destinations</button>
+            <button id="bouton_e5_dest" class="bouton" type="button" onclick="window.location.href='fichiers/e5/NZ_E5_1_destinations.pdf'">Fiche Destinations</button>
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e5/NZ_E5_2_authentification.pdf'">Fiche Authentification</button>
         </div>
         </div>
     
@@ -82,5 +82,3 @@ if(isset($_POST['pseudo'])) {
         include('js/echec_authentification.php');
     }
 }
-
-?>
