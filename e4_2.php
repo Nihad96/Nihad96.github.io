@@ -5,8 +5,10 @@ $page = 'Ajout de ruptures';
 
 include('navbar.php');
 ?>
-    <div id="content">
-
+    <div id="content" class="content_e4">
+        <div id="div_creer_destination">
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e4/NZ_E4_2_ajout_ruptures.docx'">Fichier Word</button>
+        </div>
         <div class="bloc_profil">
             <p>Contexte : Un programme d'échange en interne a été réalisé. Il permet de référencier toutes les commandes actives, afin d'en assurer le suivi.<br><br>
             Pour traiter au mieux l'avancée des commandes, j'ai crée un module d'ajout de rupture d'article. <br><br>Grâce à ce module, on peut ajouter un article en rupture en renseignant sa référence. Si la référence est présente dans une ou plusieurs commandes, le programme le signalera à l'utilisateur.</p>

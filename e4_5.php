@@ -5,7 +5,7 @@ $page = 'Requête asynchrone en vanilla JS';
 
 include('navbar.php');
 ?>
-    <div id="content">
+    <div id="content" class="content_e4">
 
         <div class="bloc_profil">
             <p>Dans le cadre de la réalisation du projet fictif de réalisation du site e-commerce Dendo Jitensha, j'ai réalisé la tache suivante.<br><br>

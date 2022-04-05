@@ -5,8 +5,10 @@ $page = 'Système de pagination';
 
 include('navbar.php'); ?>
 
-<div id="content">
-
+<div id="content" class="content_e4">
+    <div id="div_creer_destination">
+        <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e4/NZ_E4_1_systeme_pagination.docx'">Fichier Word</button>
+    </div>
     <div class="bloc_profil">
         <p>Dans le cadre de la création d'un programme de gestion de projets (diagramme de Gantt), j'ai mis un place un système de pagination sous forme de semaines.<br><br>
         Le fonctionnement est le suivant : on récupère la semaine et année actuelle via la méthode GET. Ensuite, on détermine le numéro de semaine et l'année de la semaine précédente, et le numéro de semaine et l'année de la semaine suivante.<br><br>

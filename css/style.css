@@ -286,7 +286,6 @@ font {
 }
 
 .bouton {
-    margin-right: auto;
     background: rgb(15 8 8 / 60%);
     border: none;
     color: white;
@@ -294,6 +293,7 @@ font {
     padding: 20px;
     cursor: pointer;
     font-family:'Overpass', sans-serif ;
+    width: 32%;
 }
 
 .bouton:hover {
@@ -515,7 +515,7 @@ b {
 #div_creer_destination {
     width:calc(100% - 30px);
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     color:black;
     margin: auto
 }
@@ -563,6 +563,10 @@ b {
     text-align: center;
 }
 
+.content_e4 #div_creer_destination {
+    margin-left: 0;
+}
+
 @media screen and (max-width: 960px) {
 
     #nav_connect, #nav_name {
@@ -579,11 +583,10 @@ b {
     }
 
     .une_destination {
-        width:calc(100% - 30px);
+        width: 100%;
+        margin: auto;
     }
 }
-
-
 
 @media screen and (max-width: 680px) {
     #footer {
@@ -634,14 +637,16 @@ b {
         padding: 30px;
     }
 
-    #bouton_creer_destination {
+    #div_creer_destination .bouton {
         margin: auto;
         width: 100%;
         font-size: 26px;
+        margin-bottom: 10px;
     }
 
     #div_creer_destination {
-
+        flex-direction: column;
+        width: 100%;
     }
 
     .bloc_profil {

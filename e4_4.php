@@ -5,7 +5,7 @@ $page = 'Requête asynchrone en vanilla JS';
 
 include('navbar.php');
 ?>
-    <div id="content">
+    <div id="content" class="content_e4">
 
         <div class="bloc_profil">
             <p>Le programme d'offres permet à un utilisateur de créer des offres promotionnelles via un WYSIWYG (What You See Is What You Get).<br><br>

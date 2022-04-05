@@ -18,12 +18,13 @@ $page = 'Destinations';
     
 ?>
     <div id="content">
+        <div id="div_creer_destination">
         <?php if(isset($_SESSION['nom'])) { ?>
-            <div id="div_creer_destination">
                 <button id="bouton_creer_destination" class="bouton" type="button" onclick="afficher_creer_destination()">Ajouter une destination</button>
-            </div>
         <?php } ?>
-
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e5/NZ_E5_1_destinations.docx'">Fiche Authentification</button>
+            <button id="bouton_e5_dest" class="bouton" type="button" onclick="window.location.href='fichiers/e5/NZ_E5_1_destinations.docx'">Fiche Destinations</button>
+        </div>
         </div>
     
         <form class="form" id="form_creer_destination" onsubmit="return fonction_creer_destination();">

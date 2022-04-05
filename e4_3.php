@@ -5,7 +5,7 @@ $page = 'Connexion utilisateur';
 
 include('navbar.php');
 ?>
-    <div id="content">
+    <div id="content" class="content_e4">
         <div class="bloc_profil">
             <p>Dans le cadre de la création d'un programme de gestion de demandes de SAV, j'ai mis un place un système de connexion utilisateur.</p>
 

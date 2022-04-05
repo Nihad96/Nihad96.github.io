@@ -13,7 +13,7 @@ include ('navbar.php');
             <p class="titre"><u>Formation</u> : BTS Services Informatiques aux Organisations (SIO)</p>
             <p><strong>Iris Strasbourg</strong>, depuis Octobre 2020.</p>
             <p><strong>Langages abordés : </strong>Php, SQL, Javascript, CSS</p>
-            <p><strong>Projets :</strong>Projet client fictif en Php procédural</p>
+            <p><strong>Projets : </strong>Projet client fictif en Php procédural</p>
             <p><strong>Autre : </strong>AJAX (Javascript), MVC, Git, Environnements Linux et Windows</p>
         </div>
         <img class="img_profil" src="images/profil/iris.jpg" style="cursor: pointer" onclick="window.open('https://ecoleiris.fr/', '_blank')">
@@ -25,9 +25,11 @@ include ('navbar.php');
             <p><strong>Cedam</strong>, depuis Juillet 2020.</p>
             <p><strong>Langages abordés : </strong>Php, SQL, Javascript, CSS, Powershell, Python, VBA</p>
             <p><strong>Projets : </strong>
-                <a target="_blank" href="echange.php">Programme d'échange interne</a> /
-                <a target="_blank"  href="sav.php">Programme de gestion du SAV</a> /
-                <a target="_blank" href="offres.php">Offres</a> /
+                <a target="_blank" href="e4_1.php">Pagination</a> /
+                <a target="_blank"  href="e4_2.php">Ajout de ruptures</a> /
+                <a target="_blank" href="e4_3.php">Connexion</a> /
+                <a target="_blank" href="e4_5.php">Requête asynchrone</a> /
+                <a target="_blank" href="e4_6.php">Icone dynamique</a> /
             </p>
             <p><strong>Autre : </strong>Environnement Windows, Raspberry Pi et Arduino</p>
         </div>
