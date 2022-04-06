@@ -7,7 +7,7 @@ include('navbar.php');
 ?>
     <div id="content" class="content_e4">
         <div id="div_creer_destination">
-            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e4/NZ_E4_5_panier_dynamique.pdf'">Documentation PDF</button>
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/NZ_E4_5_panier_dynamique.pdf')">Documentation PDF</button>
         </div>
         <div class="bloc_profil">
             <p>Dans le cadre de la réalisation du projet fictif de réalisation du site e-commerce Dendo Jitensha, j'ai réalisé la tache suivante.<br><br>
