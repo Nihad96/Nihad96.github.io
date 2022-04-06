@@ -1,44 +1,39 @@
 <?php
 
 
-$page = 'Panier dynamique';
+$page = 'Portfolio';
 
 include('navbar.php');
 ?>
     <div id="content" class="content_e4">
         <div id="div_creer_destination">
-            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e4/NZ_E4_5_panier_dynamique.pdf'">Documentation PDF</button>
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.location.href='fichiers/e4/NZ_E4_6_portfolio.pdf'">Documentation PDF</button>
         </div>
         <div class="bloc_profil">
-            <p>Dans le cadre de la réalisation du projet fictif de réalisation du site e-commerce Dendo Jitensha, j'ai réalisé la tache suivante.<br><br>
-                Lorsque l'utilisateur est connecté, on affiche le panier. Si le panier est vide, il faut uniquement afficher l'icone du panier. Si il y a des articles dans le panier, il faut également afficher un petit cercle comprenant le nombre d'articles dans le panier.
+            <p>Afin de présenter les réalisations effectuées pendant mais deux années de BTS mais aussi dans le but de présenter mon projet professionnel, j'ai réalisé ce portfolio.<br><br>
+                Ce portfolio comprend de nombreuses pages :
             </p>
         </div>
 
 
-        <div class="bloc_profil bloc_e4">
-            <p>Si l'utilisateur est connecté alors on affiche l'image du panier. <br>
-                Ensuite on inclut le fichier  connexion_panier_navbar.php : ce fichier va chercher dans la base de données si il y a des articles dans le panier du client. Si c'est le cas, on renvoie la somme des articles du panier.<br><br>
-            </p>
-
-            <br> <p>Ensuite, on affiche en position absolue, en haut à droite de l'icone du panier, un cercle rouge comprenant la quantité d'articles contenue dans la base de données.</p>
-            <img class="img_programmes" src="images/e4/e4_5/panier_3.PNG">
+        <div class="bloc_profil bloc_e4 bloc_portfolio" onclick="location='profil.php'">
+            <p>La page "Qui suis-je ?" retraçant mon parcours et permettant de télécharger mon CV au format PDF : </p>
+            <img class="img_programmes" src="images/profil.jpg">
         </div>
 
-        <div class="bloc_profil bloc_e4">
-            <p>Fichier connexion_panier_navbar.php :</p>
-            <img class="img_programmes" src="images/e4/e4_5/panier_4.PNG">
-
+        <div class="bloc_profil bloc_e4 bloc_portfolio" onclick="location='cedam.php'">
+            <p>La page "Cedam" présentant l'entreprise dans laquelle je suis alternant : </p>
+            <img class="img_programmes" src="images/cedam.jpg">
         </div>
 
-        <div class="bloc_profil bloc_e4">
-            <p>Panier vide</p>
-            <img class="img_programmes" src="images/e4/e4_5/panier_1.PNG">
+        <div class="bloc_profil bloc_e4 bloc_portfolio" onclick="location='destinations.php'">
+            <p>La page "Destinations" qui contient mes deux projets E5 : </p>
+            <img class="img_programmes" src="images/travel.jpg">
         </div>
 
-        <div class="bloc_profil bloc_e4">
-            <p>Panier rempli</p>
-            <img class="img_programmes" src="images/e4/e4_5/panier_2.PNG">
+        <div class="bloc_profil bloc_e4 bloc_portfolio" onclick="location='missions.php'">
+            <p>La page "Missions" qui contient la liste de mes missions E4 : </p>
+            <img class="img_programmes" src="images/laptop.jpg">
         </div>
 
     </div>

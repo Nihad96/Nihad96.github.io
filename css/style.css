@@ -567,6 +567,12 @@ b {
     margin-left: 0;
 }
 
+
+.bloc_portfolio:hover {
+    cursor: pointer;
+    background: rgb(15 8 8 / 80%);
+}
+
 @media screen and (max-width: 960px) {
 
     #nav_connect, #nav_name {
