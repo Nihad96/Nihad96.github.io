@@ -16,7 +16,7 @@ for($i=0; $i<count($tableau_utilisateurs); $i++) {
         $_SESSION['nom'] = $tableau_utilisateurs[$i]['nom'];
         $_SESSION['prenom'] = $tableau_utilisateurs[$i]['prenom'];
         $_SESSION['pseudo'] = $tableau_utilisateurs[$i]['pseudo'];
-
         break;
     }
 }
+

@@ -65,7 +65,6 @@ $page = 'Destinations';
     include ('js/js_destinations.php');
 
     if(isset($_SESSION['nom'])) {
-        // génère l'affichage des éléments via la requête Mysql
         ?><script>window.onload = afficher_elements("admin");</script><?php
     }
     else {
@@ -77,8 +76,10 @@ $page = 'Destinations';
     
     echo'</body>
 </html>';
-if(isset($_POST['pseudo'])) {
-    if($acces == false) {
-        include('js/echec_authentification.php');
+
+    if(isset($_POST['pseudo'])) {
+        if($acces == false) {
+            include('js/echec_authentification.php');
+        }
     }
-}
+
