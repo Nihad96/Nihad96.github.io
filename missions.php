@@ -7,6 +7,7 @@ include('navbar.php'); ?>
 
     <div id="content">
         <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/tableau_synthese_nihad_zatric.xlsx')">Tableau de synthèse</button>
+        <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('presentation.php')">Présentation</button>
 
         <div class="bloc_profil liste_e4" onclick="window.location = 'e4_1.php'">
             <p class="card_title">E4 1 : Système de pagination</p>
