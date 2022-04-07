@@ -1,44 +1,36 @@
 <?php
 
 
-$page = 'Panier dynamique';
+$page = 'Poste Tiroirs';
 
 include('navbar.php');
 ?>
     <div id="content" class="content_e4">
         <div id="div_creer_destination">
-            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/NZ_E4_5_panier_dynamique.pdf')">Documentation PDF</button>
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/NZ_E4_5_poste_tiroirs.pdf')">Documentation PDF</button>
         </div>
         <div class="bloc_profil">
-            <p>Dans le cadre de la réalisation du projet fictif de réalisation du site e-commerce Dendo Jitensha, j'ai réalisé la tache suivante.<br><br>
-               Lorsque l'utilisateur est connecté, on affiche le panier. Si le panier est vide, il faut uniquement afficher l'icone du panier. Si il y a des articles dans le panier, il faut également afficher un petit cercle comprenant le nombre d'articles dans le panier.
-              </p>
-        </div>
-
-
-        <div class="bloc_profil bloc_e4">
-            <p>Si l'utilisateur est connecté alors on affiche l'image du panier. <br>
-                Ensuite on inclut le fichier  connexion_panier_navbar.php : ce fichier va chercher dans la base de données si il y a des articles dans le panier du client. Si c'est le cas, on renvoie la somme des articles du panier.<br><br>
+            <p>Lorsqu'une commande est passée, un ordre de fabrication est généré par notre ERP, Divalto. Cet ordre de fabrication (OF) a un numéro unique.<br>
+            Automatiquement, un bon de fabrication est imprimé au poste des tiroirs si il y a des tiroirs à monter dans cette commande. Sur ce bon de fabrication, un code barre représente le numéro d'OF.<br>
+            Lorsque l'employé au poste des tiroirs scanne ce code avec un lecteur de codes barre, il obtient une liste de tous les tiroirs à monter.
             </p>
-
-           <br> <p>Ensuite, on affiche en position absolue, en haut à droite de l'icone du panier, un cercle rouge comprenant la quantité d'articles contenue dans la base de données.</p>
-            <img class="img_programmes" src="images/e4/e4_5/panier_3.PNG">
         </div>
 
-        <div class="bloc_profil bloc_e4">
-            <p>Fichier connexion_panier_navbar.php :</p>
-            <img class="img_programmes" src="images/e4/e4_5/panier_4.PNG">
-
+        <div class="bloc_profil">
+            <img class="img_programmes" src="images/e4/e4_5/poste_tiroirs_1.PNG">
         </div>
-
-        <div class="bloc_profil bloc_e4">
-            <p>Panier vide</p>
-            <img class="img_programmes" src="images/e4/e4_5/panier_1.PNG">
+        <div class="bloc_profil">
+            <p>Une seconde fonctionnalité du programme nous permet d'afficher les composants d'un tiroir. En cliquant sur le bouton loupe d'une ligne de tiroir, une fonction javascript est lancée.<br>
+            Cette fonction javascript permet d'effectuer une requête asynchrone vers un fichier d'un deuxième programme appelé besoins_postes.</p>
         </div>
-
-        <div class="bloc_profil bloc_e4">
-            <p>Panier rempli</p>
-            <img class="img_programmes" src="images/e4/e4_5/panier_2.PNG">
+        <div class="bloc_profil">
+            <img class="img_programmes" src="images/e4/e4_5/poste_tiroirs_3.PNG">
+        </div>
+        <div class="bloc_profil">
+            <p>Un modal est rempli avec les informations renvoyées par le fichier, il liste tous les composants du tiroir en fonction de leur catégorie.</p>
+        </div>
+        <div class="bloc_profil">
+            <img class="img_programmes" src="images/e4/e4_5/poste_tiroirs_2.PNG">
         </div>
 
     </div>

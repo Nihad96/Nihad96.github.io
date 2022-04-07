@@ -28,7 +28,7 @@ include ('navbar.php');
                 <a target="_blank" href="e4_1.php">Pagination</a> /
                 <a target="_blank"  href="e4_2.php">Ajout de ruptures</a> /
                 <a target="_blank" href="e4_3.php">Connexion</a> /
-                <a target="_blank" href="e4_5.php">Requête asynchrone</a> /
+                <a target="_blank" href="e4_7.php">Requête asynchrone</a> /
                 <a target="_blank" href="e4_6.php">Icone dynamique</a> /
             </p>
             <p><strong>Autre : </strong>Environnement Windows, Raspberry Pi et Arduino</p>

@@ -11,6 +11,10 @@ include('navbar.php');
         </div>
         <div class="bloc_profil">
             <p>Afin de présenter les réalisations effectuées pendant mais deux années de BTS mais aussi dans le but de présenter mon projet professionnel, j'ai réalisé ce portfolio.<br><br>
+                De nombreuses pratiques ont été abordées dans le cadre de la réalisation de ce portfolio :<br>
+                    - Langages : PHP, MySQL, Javascript, HTML, CSS<br>
+                    - Technologies : AJAX<br>
+                    - Responsive design<br><br>
                 Ce portfolio comprend de nombreuses pages :
             </p>
         </div>
