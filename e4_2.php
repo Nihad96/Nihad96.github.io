@@ -7,7 +7,7 @@ include('navbar.php');
 ?>
     <div id="content" class="content_e4">
         <div id="div_creer_destination">
-            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/NZ_E4_2_ajout_ruptures.pdf')">Documentation PDF</button>
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/e4_2/NZ_E4_2_ajout_ruptures.pdf')">Documentation PDF</button>
         </div>
         <div class="bloc_profil">
             <p>Contexte : Un programme d'échange en interne a été réalisé. Il permet de référencier toutes les commandes actives, afin d'en assurer le suivi.<br><br>

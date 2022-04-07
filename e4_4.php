@@ -7,7 +7,7 @@ include('navbar.php');
 ?>
     <div id="content" class="content_e4">
         <div id="div_creer_destination">
-            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/NZ_E4_4_requete_asynchrone.pdf')">Documentation PDF</button>
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/e4_4/NZ_E4_4_requete_asynchrone.pdf')">Documentation PDF</button>
         </div>
         <div class="bloc_profil">
             <p>Le programme d'offres permet à un utilisateur de créer des offres promotionnelles via un WYSIWYG (What You See Is What You Get).<br><br>

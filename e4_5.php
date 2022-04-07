@@ -7,7 +7,7 @@ include('navbar.php');
 ?>
     <div id="content" class="content_e4">
         <div id="div_creer_destination">
-            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/NZ_E4_5_poste_tiroirs.pdf')">Documentation PDF</button>
+            <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/e4_5/NZ_E4_5_poste_tiroirs.pdf')">Documentation PDF</button>
         </div>
         <div class="bloc_profil">
             <p>Lorsqu'une commande est passée, un ordre de fabrication est généré par notre ERP, Divalto. Cet ordre de fabrication (OF) a un numéro unique.<br>

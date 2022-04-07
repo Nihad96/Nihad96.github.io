@@ -7,7 +7,7 @@ include('navbar.php'); ?>
 
 <div id="content" class="content_e4">
     <div id="div_creer_destination">
-        <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/NZ_E4_1_systeme_pagination.pdf')">Documentation PDF</button>
+        <button id="bouton_e5_auth" class="bouton" type="button" onclick="window.open('fichiers/e4/e4_1/NZ_E4_1_systeme_pagination.pdf')">Documentation PDF</button>
     </div>
     <div class="bloc_profil">
         <p>Dans le cadre de la création d'un programme de gestion de projets (diagramme de Gantt), j'ai mis un place un système de pagination sous forme de semaines.<br><br>
