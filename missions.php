@@ -32,6 +32,11 @@ include('navbar.php'); ?>
             <img class="img_programmes" src="images/e4/e4_5/panier_2.PNG">
         </div>
 
+        <div class="bloc_profil liste_e4" onclick="window.location = 'e4_6.php'">
+            <p class="card_title">E4 6 : Portfolio</p>
+            <img class="img_programmes" src="images/e4/e4_6/portfolio_1.PNG">
+        </div>
+
     </div>
 
 <?php
