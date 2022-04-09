@@ -135,6 +135,7 @@ font {
 
 .social_img {
     width:30px;
+    height: 30px;
     height: min-content;
 }
 
@@ -294,6 +295,7 @@ font {
     cursor: pointer;
     font-family:'Overpass', sans-serif ;
     width: 32%;
+    text-align: center;
 }
 
 .bouton:hover {
